@@ -3,7 +3,7 @@ Player.__index = Player
 
 function Player:new(x, y)
     return setmetatable({
-        x = x, y = y, vx = 0, vy = 0, speed = 200, angle = 0, width = 32, height = 32,
+        x = x, y = y, speed = 200, angle = 0, width = 32, height = 32,
         mouseWasPressed = false, laserOffSet = 20, laserLength = 1020,
         bodySprite = love.graphics.newImage("textures/topdown_character.png"),
         gunSprite = love.graphics.newImage("textures/gun.png")
